@@ -1,0 +1,334 @@
+body{
+	font-family: 'Rubik', sans-serif;
+	background-color: hsl(0, 0%, 100%);
+	overflow-x: hidden;
+}
+
+main{
+	width: 1440px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: no-wrap;
+	padding-bottom: 10%;
+	padding-top: 10%;
+}
+
+main:before{
+	content: '';
+	display: block;
+	background: rgb(233,66,255);
+	background: linear-gradient(200deg, rgba(233,66,255,1) 0%, rgba(136,56,255,1) 100%);
+	width: 35%;
+	height: 100%;
+	top: -10%;
+	left: -5%;
+	position: absolute;
+	border-radius: 0 0 500px 500px;
+}
+
+main:after{
+	content: '';
+	display: block;
+	background: hsl(270, 20%, 96%);
+	width: 35%;
+	height: 100%;
+	bottom: -50%;
+	right: -5%;
+	position: absolute;
+	border-radius: 500px 500px 0 0;
+}
+
+section{
+	margin: auto;
+	z-index: 1;
+}
+
+.s1{
+	width: 350px;
+	border-radius: 30px;
+	background-color: hsl(0, 0%, 100%);
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 1%;
+	margin-left: 25%;
+	margin-right: 0;
+}
+
+.phoneheader{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	background: rgb(233,66,255);
+	background: linear-gradient(280deg, rgba(233,66,255,1) 0%, rgba(136,56,255,1) 100%);
+	width: 98%;
+	border-radius: 30px 30px 10px 10px;
+	color: hsl(0, 0%, 100%);
+	padding-top: 5%;
+	position: relative;
+}
+
+.phoneheader:before{
+	content: '';
+	display: block;
+	width: 70%;
+	height: 35%;
+	background-color: hsl(0, 0%, 100%);
+	top: -10%;
+	border-radius: 0 0 25px 25px;
+	z-index: 1;
+	position: absolute;
+}
+
+.phoneheader p{
+	font-size: 25px;
+}
+
+.phoneheader span{
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	gap: 0 15px;
+	padding-right: 20%;
+}
+
+.phoneheader span img{
+	grid-row: span 2;
+	width: 40px;
+	border-radius: 50px;
+	border: solid 3px hsl(0, 0%, 100%);
+	align-self: center;
+}
+
+.phoneheader span h1{
+	font-size: 20px;
+	font-weight: 500;
+	margin-bottom: 5px;
+}
+
+.phoneheader span h2{
+	font-size: 15px;
+	font-weight: 400;	
+	color: hsl(276, 100%, 81%);
+	margin-top: 0;
+}
+
+.phonebody{
+	background-color: hsl(270, 20%, 96%);
+	margin-top: -10px;
+	width: 92%;
+	border-radius: 0 0 30px 30px;
+	display: flex;
+	flex-direction: column;
+	padding: 5% 3% 5% 3%;
+}
+
+.left{
+	background-color: hsl(276, 100%, 95%);
+	color: hsl(276, 55%, 52%);
+	width: 60%;
+	font-size: 13px;
+	padding: 3%;
+	border-radius: 15px 15px 15px 5px;
+	margin-bottom: 0;
+}
+
+.right{
+	background-color: hsl(0, 0%, 100%);
+	color: hsl(271, 15%, 43%);
+	width: 60%;
+	font-size: 13px;
+	padding: 3%;
+	border-radius: 15px 15px 5px 15px;
+	align-self: end;
+	margin-bottom: 0;
+}
+
+.spleft{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	width: 60%;
+	align-self: end;
+	margin-top: 3%;
+}
+
+.spleft img{
+	width: 60px;
+	border-radius: 10px;
+}
+
+.spright{
+	width: 60%;
+	height: 45px;
+	background: rgb(233,66,255);
+	background: linear-gradient(90deg, rgba(233,66,255,1) 0%, rgba(136,56,255,1) 100%);
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	margin: 2% 0 3% 0;
+	padding: 0 5% 0 5%;
+	color: hsl(0, 0%, 100%);
+	border-radius: 15px 15px 15px 5px;
+	margin-top: 3%;
+	margin-bottom: 0;
+}
+
+.spright h3{
+	border: solid 1px hsl(0, 0%, 100%);
+	width: 20px;
+	height: 20px;
+	border-radius: 50px;
+}
+
+.spright p{
+	font-size: 15px;
+	font-weight: 400;
+	width: 60%;
+	color: hsl(276, 100%, 81%);
+}
+
+.input{
+	background: hsl(0, 0%, 100%);
+	width: 90%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 5% 0 5%;
+	border-radius: 50px;
+	height: 40px;
+	margin-top: 3%;
+}
+
+.input h4{
+	width: 30px;
+	height: 30px;
+	background-color: hsl(271, 36%, 24%);
+	border-radius: 50px;
+	color: hsl(0, 0%, 100%);
+	text-align: center;
+	font-size: 30px;
+	line-height: 27px;
+}
+
+.input p{
+	color: hsl(206, 6%, 79%);
+	padding-left: 5%;
+	font-size: 15px;
+}
+
+.s2{
+	width: 40%;
+}
+
+.s2 h5{
+	font-size: 50px;
+	margin-bottom: 0;
+	color: hsl(271, 36%, 24%);
+}
+
+.s2 p{
+	color: hsl(270, 7%, 64%);
+	padding-right: 15%;
+	line-height: 25px;
+}
+
+@media (max-width: 375px){
+	main{
+		width: 375px;
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	main:before{
+		width: 100%;
+		left: -50%;
+	}
+	
+	main:after{
+		width: 100%;
+		right: -50%;
+		bottom: -100%;
+	}
+	
+	.s1{
+		margin-left: 0;
+		width: 280px;
+	}
+	
+	.phoneheader p{		
+		font-size: 15px;
+	}
+	
+	.phoneheader span h1{
+		font-size: 15px;
+		margin-bottom: 0;
+	}
+	
+	.phoneheader span h2{
+		font-size: 10px;
+		margin-top: 0;		
+	}
+	
+	.phoneheader span img{
+		width: 25px;
+		border-width: 2px;
+	}
+	
+	.phoneheader:before{
+		top: 0%;
+		width: 60%;
+		height: 25%;
+	}
+	
+	.left, .right{
+		font-size: 8px;
+	}
+	
+	.spleft img{
+		width: 45px;
+	}
+	
+	.spright{
+		height: 35px;
+	}
+	
+	.spright h3{
+		width: 15px;
+		height: 15px;
+	}
+	
+	.spright p{
+		font-size: 10px;
+	}
+	
+	.spright h4{
+		font-size: 15px;
+	}
+	
+	.input{
+		height: 35px;
+	}
+	
+	.input p{
+		font-size: 10px;
+	}
+	
+	.s2{
+		text-align: center;
+		width: 100%;
+	}
+	
+	.s2 h5{
+		font-size: 35px;
+		width: 100%;
+	}
+	
+	.s2 p{
+		padding: 0 10% 0 10%;
+	}
+}
