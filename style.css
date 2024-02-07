@@ -1,7 +1,6 @@
 body{
 	font-family: 'Rubik', sans-serif;
 	background-color: hsl(0, 0%, 100%);
-	overflow-x: hidden;
 }
 
 main{
@@ -11,6 +10,8 @@ main{
 	flex-wrap: no-wrap;
 	padding-bottom: 10%;
 	padding-top: 10%;
+	position:relative;
+	overflow-x: hidden;
 }
 
 main:before{
@@ -19,8 +20,8 @@ main:before{
 	background: rgb(233,66,255);
 	background: linear-gradient(200deg, rgba(233,66,255,1) 0%, rgba(136,56,255,1) 100%);
 	width: 35%;
-	height: 100%;
-	top: -10%;
+	height: 75%;
+	top: 0;
 	left: -5%;
 	position: absolute;
 	border-radius: 0 0 500px 500px;
@@ -31,8 +32,8 @@ main:after{
 	display: block;
 	background: hsl(270, 20%, 96%);
 	width: 35%;
-	height: 100%;
-	bottom: -50%;
+	height: 75%;
+	bottom: 0;
 	right: -5%;
 	position: absolute;
 	border-radius: 500px 500px 0 0;
@@ -246,13 +247,14 @@ section{
 	
 	main:before{
 		width: 100%;
+		height: 50%;
 		left: -50%;
 	}
 	
 	main:after{
 		width: 100%;
+		height: 50%;
 		right: -50%;
-		bottom: -100%;
 	}
 	
 	.s1{
